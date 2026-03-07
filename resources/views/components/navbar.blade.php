@@ -1,0 +1,126 @@
+<div
+    x-data="{ scrolled: false, open: false }"
+    x-init="window.addEventListener('scroll', () => { scrolled = window.scrollY > 50 })"
+>
+    <nav :class="scrolled ? 'navbar scrolled' : 'navbar'">
+
+        {{-- Logo --}}
+        <a href="{{ route('home') }}"
+        style="display:flex; flex-direction:column; align-items:center;
+            text-decoration:none; line-height:1; z-index:100;">
+        <img src="{{ asset('images/pa-logo.png') }}"alt="People Access"
+            style="left:2rem; top:-70%; position:absolute; height:200px; width:auto; display:block; mix-blend-mode:screen;"/>
+        </a>
+
+        {{-- Desktop nav links — truly centered --}}
+        <ul style="
+            position:absolute;
+            left:50%;
+            transform:translateX(-50%);
+            display:flex;
+            align-items:center;
+            gap:2.5rem;
+            list-style:none;
+            margin:0;
+            padding:0;
+        " class="navbar-links-desktop">
+            <li><a href="{{ route('home') }}" style="
+                font-family:'Jost',sans-serif;
+                font-size:0.75rem;
+                font-weight:400;
+                letter-spacing:0.1em;
+                text-transform:uppercase;
+                color:#f5f0eb;
+                text-decoration:none;
+                transition:color 0.2s;
+            "
+            onmouseover="this.style.color='#e8e1d4'"
+            onmouseout="this.style.color='#a09488'"
+            >Home</a></li>
+            <li><a href="{{ route('work') }}" style="
+                font-family:'Jost',sans-serif;
+                font-size:0.75rem;
+                font-weight:400;
+                letter-spacing:0.1em;
+                text-transform:uppercase;
+                color:#a09488;
+                text-decoration:none;
+                transition:color 0.2s;
+            "
+            onmouseover="this.style.color='#e8e1d4'"
+            onmouseout="this.style.color='#a09488'"
+            >The Work</a></li>
+            <li><a href="{{ route('contact') }}" style="
+                font-family:'Jost',sans-serif;
+                font-size:0.75rem;
+                font-weight:400;
+                letter-spacing:0.1em;
+                text-transform:uppercase;
+                color:#a09488;
+                text-decoration:none;
+                transition:color 0.2s;
+            "
+            onmouseover="this.style.color='#e8e1d4'"
+            onmouseout="this.style.color='#a09488'"
+            >Start Here</a></li>
+        </ul>
+
+        {{-- Desktop BEGIN button --}}
+        <a href="{{ route('contact') }}" style="
+            font-family:'Jost',sans-serif;
+            font-size:0.72rem;
+            font-weight:500;
+            letter-spacing:0.12em;
+            text-transform:uppercase;
+            color:#e8e1d4;
+            border:1px solid rgba(57,128,141,0.6);
+            padding:0.5rem 1.4rem;
+            text-decoration:none;
+            transition:all 0.2s;
+            z-index:2;
+        "
+        onmouseover="this.style.background='rgba(57,128,141,0.15)'; this.style.borderColor='#39808d'"
+        onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(57,128,141,0.6)'"
+        class="navbar-begin-desktop"
+        >Begin</a>
+
+        {{-- Hamburger (mobile only) --}}
+        <button
+            class="hamburger"
+            @click="open = true"
+            :style="open ? 'display:none !important' : ''"
+            aria-label="Open menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    {{-- Mobile full-screen menu --}}
+    <div :class="open ? 'mobile-menu open' : 'mobile-menu'">
+
+        <button
+            @click="open = false"
+            x-show="open"
+            style="position:absolute; top:1.5rem; right:2rem; background:none; border:none; cursor:pointer;"
+            aria-label="Close menu"
+        >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e8e1d4" stroke-width="1.5">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+
+        <img
+            src="{{ asset('images/pa-logo.png') }}"
+            alt="People Access"
+            style="height:52px; width:auto; margin-bottom:0.75rem; mix-blend-mode:screen;"
+        />
+
+        <a href="{{ route('home') }}"    @click="open = false">Home</a>
+        <a href="{{ route('work') }}"    @click="open = false">The Work</a>
+        <a href="{{ route('contact') }}" @click="open = false">Start Here</a>
+        <a href="{{ route('contact') }}" @click="open = false" style="color:#39808d;">Begin →</a>
+    </div>
+</div>
