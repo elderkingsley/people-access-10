@@ -219,8 +219,8 @@ section {
 
     /* ── Navbar logo — scale down and contain ── */
     .navbar-logo-img {
-        height: 140px !important;
-        top: -55px !important;
+        height: 100px !important;
+        top: -25px !important;
     }
 
     /* ── Section padding override ── */
@@ -359,7 +359,7 @@ section {
     }
 
     .navbar-logo-img {
-        height: 110px !important;
-        top: -40px !important;
+        height: 80px !important;
+        top: -15px !important;
     }
 }

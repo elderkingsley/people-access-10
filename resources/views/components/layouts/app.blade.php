@@ -36,8 +36,8 @@
 
         /* Navbar logo */
         .navbar-logo-img {
-            height: 140px !important;
-            top: -55px !important;
+            height: 100px !important;
+            top: -25px !important;
         }
 
         /* Section padding */
@@ -157,8 +157,8 @@
             font-size: clamp(80px, 25vw, 120px) !important;
         }
         .navbar-logo-img {
-            height: 110px !important;
-            top: -40px !important;
+            height: 80px !important;
+            top: -15px !important;
         }
     }
     </style>

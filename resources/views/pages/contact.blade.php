@@ -342,7 +342,7 @@
                         <rect x="2" y="4" width="20" height="16" rx="2"/>
                         <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
                     </svg>
-                    <a href="mailto:advisory@peopleaccessng.com" style="
+                    <a href="mailto:people@peopleaccessng.com" style="
                         font-family:'Jost',sans-serif;
                         font-size:0.82rem;
                         font-weight:300;
@@ -350,7 +350,7 @@
                         text-decoration:none;
                         line-height:1.5;
                         word-break:break-all;
-                    ">advisory@peopleaccessng.com</a>
+                    ">people@peopleaccessng.com</a>
                 </div>
 
                 {{-- Location --}}
