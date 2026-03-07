@@ -31,7 +31,7 @@
         letter-spacing:-0.02em;
     ">TW</div>
 
-    <div class="hero-content" style="max-width:1200px; width:100%; position:relative; z-index:2; padding-top:8rem;">
+    <div class="hero-content" style="max-width:1200px; width:100%; position:relative; z-index:2;">
         <p style="
             font-family:'Jost',sans-serif;
             font-size:0.7rem;

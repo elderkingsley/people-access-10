@@ -25,6 +25,11 @@
          Inline so they can NEVER be cached away
     ═══════════════════════════════════════════ --}}
     <style>
+    /* Hero content padding — desktop default */
+    .hero-content {
+        padding-top: 8rem;
+    }
+
     @media (max-width: 768px) {
 
         /* Navbar */

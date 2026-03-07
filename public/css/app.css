@@ -200,6 +200,12 @@ section {
 }
 
 
+/* ─── Hero content padding ───────────────────────────────── */
+.hero-content {
+    padding-top: 8rem;
+}
+
+
 /* ═══════════════════════════════════════════
    RESPONSIVE — TABLET & MOBILE (max-width: 768px)
 ═══════════════════════════════════════════ */
