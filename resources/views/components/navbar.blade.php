@@ -99,13 +99,7 @@
 
     {{-- Mobile full-screen menu --}}
     <div
-        x-show="open"
-        x-transition:enter="transition ease-out duration-200"
-        x-transition:enter-start="opacity-0"
-        x-transition:enter-end="opacity-100"
-        x-transition:leave="transition ease-in duration-150"
-        x-transition:leave-start="opacity-100"
-        x-transition:leave-end="opacity-0"
+        :style="open ? 'display:flex' : 'display:none'"
         style="
             display:none;
             position:fixed;
@@ -117,13 +111,12 @@
             justify-content:center;
             gap:2rem;
         "
-        x-cloak
     >
 
         {{-- Close button --}}
         <button
             @click="open = false"
-            style="position:absolute; top:1.25rem; right:1.25rem; background:none; border:none; cursor:pointer; z-index:1001; padding:0.5rem;"
+            style="position:absolute; top:1.25rem; right:1.25rem; background:none; border:none; cursor:pointer; z-index:1001; padding:0.75rem;"
             aria-label="Close menu"
         >
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8e1d4" stroke-width="1.5">
@@ -139,12 +132,9 @@
             style="height:52px; width:auto; margin-bottom:1rem; mix-blend-mode:screen;"
         />
 
-        <a href="{{ route('home') }}"    @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#e8e1d4; text-decoration:none; transition:color 0.2s;">Home</a>
-        <a href="{{ route('work') }}"    @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#e8e1d4; text-decoration:none; transition:color 0.2s;">The Work</a>
-        <a href="{{ route('contact') }}" @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#e8e1d4; text-decoration:none; transition:color 0.2s;">Start Here</a>
-        <a href="{{ route('contact') }}" @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#39808d; text-decoration:none; transition:color 0.2s;">Begin →</a>
+        <a href="{{ route('home') }}"    @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#e8e1d4; text-decoration:none;">Home</a>
+        <a href="{{ route('work') }}"    @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#e8e1d4; text-decoration:none;">The Work</a>
+        <a href="{{ route('contact') }}" @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#e8e1d4; text-decoration:none;">Start Here</a>
+        <a href="{{ route('contact') }}" @click="open = false" style="font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:#39808d; text-decoration:none;">Begin →</a>
     </div>
 </div>
-
-{{-- x-cloak hides the menu before Alpine loads --}}
-<style>[x-cloak] { display: none !important; }</style>

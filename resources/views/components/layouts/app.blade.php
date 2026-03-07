@@ -144,7 +144,7 @@
 
         /* Hero content — less top padding on mobile */
         .hero-content {
-            padding-top: 4rem !important;
+            padding-top: 2rem !important;
         }
     }
 
