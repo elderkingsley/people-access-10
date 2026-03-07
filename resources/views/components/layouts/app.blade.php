@@ -36,8 +36,8 @@
 
         /* Navbar logo */
         .navbar-logo-img {
-            height: 100px !important;
-            top: -25px !important;
+            height: 140px !important;
+            top: -45px !important;
         }
 
         /* Section padding */
@@ -141,6 +141,11 @@
         .hero-section {
             padding-bottom: 3rem !important;
         }
+
+        /* Hero content — less top padding on mobile */
+        .hero-content {
+            padding-top: 4rem !important;
+        }
     }
 
     @media (max-width: 480px) {
@@ -157,8 +162,8 @@
             font-size: clamp(80px, 25vw, 120px) !important;
         }
         .navbar-logo-img {
-            height: 80px !important;
-            top: -15px !important;
+            height: 120px !important;
+            top: -35px !important;
         }
     }
     </style>

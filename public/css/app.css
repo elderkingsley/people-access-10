@@ -219,8 +219,8 @@ section {
 
     /* ── Navbar logo — scale down and contain ── */
     .navbar-logo-img {
-        height: 100px !important;
-        top: -25px !important;
+        height: 140px !important;
+        top: -45px !important;
     }
 
     /* ── Section padding override ── */
@@ -334,6 +334,11 @@ section {
     .hero-section {
         padding-bottom: 3rem !important;
     }
+
+    /* ── Hero content — less top padding on mobile ── */
+    .hero-content {
+        padding-top: 4rem !important;
+    }
 }
 
 
@@ -359,7 +364,7 @@ section {
     }
 
     .navbar-logo-img {
-        height: 80px !important;
-        top: -15px !important;
+        height: 120px !important;
+        top: -35px !important;
     }
 }
