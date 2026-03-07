@@ -5,7 +5,7 @@
 {{-- ═══════════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════════════ --}}
-<section style="
+<section class="hero-section" style="
     position:relative;
     min-height:100vh;
     background-color:#0f0e0c;
@@ -16,7 +16,7 @@
     overflow:hidden;
 ">
     {{-- TW decorative letters top right --}}
-    <div style="
+    <div class="deco-letters" style="
         position:absolute;
         top:0.2em;
         right:-0.05em;
@@ -31,7 +31,7 @@
         letter-spacing:-0.02em;
     ">TW</div>
 
-    <div style="max-width:1200px; width:100%; position:relative; z-index:2;">
+    <div style="max-width:1200px; width:100%; position:relative; z-index:2; padding-top:8rem;">
         <p style="
             font-family:'Jost',sans-serif;
             font-size:0.7rem;
@@ -39,12 +39,11 @@
             letter-spacing:0.22em;
             text-transform:uppercase;
             color:#ffffff;
-            margin-bottom:2rem;
+            margin-bottom:1.5rem;
         ">The Work</p>
 
         {{-- Copper accent line --}}
         <div style="width: 48px; height: 1px; background-color: #39808d; margin-bottom: 2.5rem;"></div>
-
 
         <h1 style="
             font-family:'Cormorant Garamond',serif;
@@ -54,13 +53,12 @@
             line-height:1.0;
             color:#e8e1d4;
             max-width:700px;
+            margin-bottom:2.5rem;
         ">
             Systems that<br>
             <span style="color:#39808d;">hold companies</span><br>
             together.
         </h1>
-        <br>
-
 
         {{-- Body + CTA row --}}
         <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
@@ -75,7 +73,8 @@
             ">
                 Structure should serve strategy. We build the people systems that let growth-stage companies scale without fracturing.
             </p>
-        {{-- Two buttons --}}
+
+            {{-- Two buttons --}}
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
                 <a href="{{ route('contact') }}" style="
                     display: inline-block;
@@ -108,15 +107,16 @@
                 "
                 onmouseover="this.style.borderColor='rgba(232,225,212,0.6)'"
                 onmouseout="this.style.borderColor='rgba(232,225,212,0.25)'"
-                >See Our Appoach</a>
+                >See Our Approach</a>
             </div>
+        </div>
     </div>
 </section>
 
 {{-- ═══════════════════════════════════════════════════
      EXPERTISE GRID
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#f4efe6; padding:5rem 3rem;">
+<section style="background-color:#f4efe6; padding:6rem 3rem;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 2fr; gap:4rem; align-items:start;" class="expertise-outer-grid">
 
@@ -187,7 +187,7 @@
 {{-- ═══════════════════════════════════════════════════
      SECTION 1 — ORGANIZATIONAL DESIGN (light)
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#f4efe6; padding:7rem 3rem;">
+<section style="background-color:#f4efe6; padding:6rem 3rem; border-top:1px solid #ddd5c8;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;" class="work-section-grid">
 
@@ -234,8 +234,8 @@
             </div>
 
             {{-- Right — image with offset frame --}}
-            <div style="position:relative; padding:1.5rem 0 0 1.5rem;">
-                <div style="
+            <div class="offset-frame" style="position:relative; padding:1.5rem 0 0 1.5rem;">
+                <div class="offset-frame-border" style="
                     position:absolute;
                     top:0; left:0; right:1.5rem; bottom:1.5rem;
                     border:1px solid #ddd5c8;
@@ -244,6 +244,7 @@
                 <img
                     src="{{ asset('images/align.jpeg') }}"
                     alt="Organizational Design"
+                    class="work-image"
                     style="display:block; width:100%; height:420px; object-fit:cover; object-position:center; position:relative; z-index:1;"
                 />
             </div>
@@ -254,7 +255,7 @@
 {{-- ═══════════════════════════════════════════════════
      SECTION 2 — PERFORMANCE SYSTEMS (dark)
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#0f0e0c; padding:7rem 3rem;">
+<section style="background-color:#0f0e0c; padding:6rem 3rem;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;" class="work-section-grid">
 
@@ -263,6 +264,7 @@
                 <img
                     src="{{ asset('images/board_meeting.jpeg') }}"
                     alt="Performance Systems"
+                    class="work-image"
                     style="display:block; width:100%; height:420px; object-fit:cover; object-position:center;"
                 />
             </div>
@@ -315,7 +317,7 @@
 {{-- ═══════════════════════════════════════════════════
      SECTION 3 — PROCESS & TECHNOLOGY (light)
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#f4efe6; padding:7rem 3rem;">
+<section style="background-color:#f4efe6; padding:6rem 3rem;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;" class="work-section-grid">
 
@@ -362,8 +364,8 @@
             </div>
 
             {{-- Right — image with offset frame --}}
-            <div style="position:relative; padding:1.5rem 0 0 1.5rem;">
-                <div style="
+            <div class="offset-frame" style="position:relative; padding:1.5rem 0 0 1.5rem;">
+                <div class="offset-frame-border" style="
                     position:absolute;
                     top:0; left:0; right:1.5rem; bottom:1.5rem;
                     border:1px solid #ddd5c8;
@@ -372,6 +374,7 @@
                 <img
                     src="{{ asset('images/keyboard.jpeg') }}"
                     alt="Process and Technology"
+                    class="work-image"
                     style="display:block; width:100%; height:420px; object-fit:cover; object-position:center; position:relative; z-index:1;"
                 />
             </div>
@@ -383,13 +386,13 @@
 {{-- ═══════════════════════════════════════════════════
      IJEOMA BIO
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#0f0e0c; padding:7rem 3rem;">
+<section style="background-color:#0f0e0c; padding:6rem 3rem;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start;" class="work-section-grid">
 
             {{-- Left — photo with offset frame --}}
-            <div style="position:relative; padding:1.5rem 0 0 1.5rem;">
-                <div style="
+            <div class="offset-frame" style="position:relative; padding:1.5rem 0 0 1.5rem;">
+                <div class="offset-frame-border" style="
                     position:absolute;
                     top:0; left:0; right:1.5rem; bottom:1.5rem;
                     border:1px solid #2a2724;
@@ -398,6 +401,7 @@
                 <img
                     src="{{ asset('images/ijeoma.jpeg') }}"
                     alt="Ijeoma Oyeyinka"
+                    class="work-image"
                     style="display:block; width:100%; height:560px; object-fit:cover; object-position:top; position:relative; z-index:1;"
                 />
             </div>
@@ -471,6 +475,7 @@
                             color:#1a1815;
                             padding:0.85rem 1.25rem;
                             outline:none;
+                            min-width:0;
                         "
                     />
                     <button style="
@@ -504,7 +509,7 @@
 ════════════════════════════════════════════════════ --}}
 <section style="background-color:#0f0e0c; padding:5rem 3rem; border-top:1px solid #2a2724;">
     <div style="max-width:1200px; margin:0 auto;">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;" class="work-cta-grid">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;" class="footer-cta-grid">
 
             <h2 style="
                 font-family:'Cormorant Garamond',serif;
@@ -557,17 +562,5 @@
         </div>
     </div>
 </section>
-
-{{-- ═══════════════════════════════════════════════════
-     RESPONSIVE
-════════════════════════════════════════════════════ --}}
-<style>
-@media (max-width: 768px) {
-    .work-section-grid    { grid-template-columns: 1fr !important; }
-    .expertise-outer-grid { grid-template-columns: 1fr !important; }
-    .expertise-inner-grid { grid-template-columns: 1fr 1fr !important; }
-    .work-cta-grid        { grid-template-columns: 1fr !important; }
-}
-</style>
 
 </x-layouts.app>

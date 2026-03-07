@@ -2,7 +2,7 @@
 
     {{-- Newsletter --}}
     <div style="padding:3.5rem 3rem; border-bottom:1px solid #2a2724;">
-        <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
+        <div class="newsletter-flex" style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
             <div>
                 <p style="font-family:'Jost',sans-serif; font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:#39808d; margin-bottom:0.4rem;">
                     Stay Informed
@@ -11,7 +11,7 @@
                     Insights on scaling organizations.
                 </p>
             </div>
-            <div style="display:flex; flex:1; max-width:480px;">
+            <div class="newsletter-input-wrap" style="display:flex; flex:1; max-width:480px;">
                 <input
                     type="email"
                     placeholder="Your email address"
@@ -26,6 +26,7 @@
                         color:#e8e1d4;
                         padding:0.85rem 1.25rem;
                         outline:none;
+                        min-width:0;
                     "
                 />
                 <button style="
@@ -111,6 +112,7 @@
                         color:#39808d;
                         text-decoration:none;
                         margin-bottom:0.5rem;
+                        word-break:break-all;
                     ">advisory@peopleaccessng.com</a>
                     <p style="font-family:'Jost',sans-serif; font-size:0.85rem; font-weight:300; color:#7a7268;">
                         Gbagada, Lagos

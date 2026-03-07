@@ -5,7 +5,7 @@
 {{-- ═══════════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════════════ --}}
-<section style="
+<section class="hero-section" style="
     position: relative;
     min-height: 100vh;
     background-color: #0f0e0c;
@@ -16,7 +16,7 @@
     overflow: hidden;
 ">
     {{-- Large decorative PA — top right, outline only --}}
-    <div style="
+    <div class="deco-letters" style="
         position: absolute;
         top: 0.2em;
         right: -0.05em;
@@ -31,7 +31,7 @@
         letter-spacing: -0.02em;
     ">PA</div>
 
-    <div style="max-width: 1200px; width: 100%; position: relative; z-index: 2;">
+    <div style="max-width: 1200px; width: 100%; position: relative; z-index: 2; padding-top: 8rem;">
 
         {{-- Eyebrow --}}
         <p style="
@@ -126,7 +126,7 @@
 {{-- ═══════════════════════════════════════════════════
      WHAT BREAKS — light background
 ════════════════════════════════════════════════════ --}}
-<section style="background-color: #f4efe6; padding: 7rem 3rem;">
+<section style="background-color: #f4efe6; padding: 6rem 3rem;">
     <div style="max-width: 1200px; margin: 0 auto;">
         <div style="
             display: grid;
@@ -160,8 +160,8 @@
             </div>
 
             {{-- Right — image with offset frame --}}
-            <div style="position: relative; padding: 1.5rem 0 0 1.5rem;">
-                <div style="
+            <div class="offset-frame" style="position: relative; padding: 1.5rem 0 0 1.5rem;">
+                <div class="offset-frame-border" style="
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -173,6 +173,7 @@
                 <img
                     src="{{ asset('images/people_colaborating1.jpeg') }}"
                     alt="People collaborating"
+                    class="work-image"
                     style="
                         display: block;
                         width: 100%;
@@ -191,7 +192,7 @@
 {{-- ═══════════════════════════════════════════════════
      SERVICES
 ════════════════════════════════════════════════════ --}}
-<section style="background-color: #0f0e0c; padding: 7rem 3rem;">
+<section style="background-color: #0f0e0c; padding: 6rem 3rem;">
     <div style="max-width: 1200px; margin: 0 auto;">
 
         {{-- Section header --}}
@@ -247,8 +248,8 @@
                 @mouseenter="hovered = true"
                 @mouseleave="hovered = false"
             >
-                <div style="display:flex; align-items:center; justify-content:space-between; padding:1.6rem 0; gap:1rem;">
-                    <div style="display:flex; align-items:center; gap:3rem; flex:1;">
+                <div class="service-row-inner" style="display:flex; align-items:center; justify-content:space-between; padding:1.6rem 0; gap:1rem;">
+                    <div style="display:flex; align-items:center; gap:3rem; flex:1;" class="service-row-inner">
                         <span style="
                             font-family:'Jost',sans-serif;
                             font-size:0.7rem;
@@ -278,6 +279,7 @@
                     x-transition:enter="transition ease-out duration-200"
                     x-transition:enter-start="opacity-0"
                     x-transition:enter-end="opacity-100"
+                    class="service-expanded-text"
                     style="padding:0 0 1.5rem 5.5rem;"
                 >
                     <p style="font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:#7a7268; line-height:1.85; max-width:560px;">
@@ -297,7 +299,7 @@
 <section style="background-color: #39808d; padding: 5rem 3rem; position: relative; overflow: hidden;">
 
     {{-- Ghost C watermark --}}
-    <div style="
+    <div class="deco-letters" style="
         position:absolute;
         right:-0.1em;
         top:50%;
@@ -426,6 +428,7 @@ $cases = [
         x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0"
         x-transition:enter-end="opacity-100"
+        class="case-image-wrap"
         style="position:relative; height:520px; overflow:hidden;"
     >
         <img
@@ -435,7 +438,7 @@ $cases = [
         />
         <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(15,14,12,0.82) 0%, rgba(15,14,12,0.4) 55%, rgba(15,14,12,0.1) 100%);"></div>
 
-        <div style="position:absolute; top:50%; left:0; transform:translateY(-50%); padding:0 3rem; max-width:620px;">
+        <div class="case-overlay-text" style="position:absolute; top:50%; left:0; transform:translateY(-50%); padding:0 3rem; max-width:620px;">
             <p style="font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#39808d; margin-bottom:1.25rem;">
                 {{ $case['label'] }}
             </p>
@@ -455,8 +458,8 @@ $cases = [
     </div>
     @endforeach
 
-    {{-- Tab bar —light background --}}
-    <div style="background-color:#f4efe6; display:grid; grid-template-columns:repeat(4,1fr);">
+    {{-- Tab bar — light background --}}
+    <div class="case-tabs-bar" style="background-color:#f4efe6; display:grid; grid-template-columns:repeat(4,1fr);">
         @foreach($cases as $i => $case)
         <button
             @click="active = {{ $i }}"
@@ -486,7 +489,7 @@ $cases = [
 {{-- ═══════════════════════════════════════════════════
      WHO WE WORK WITH
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#0f0e0c; padding:7rem 3rem;">
+<section style="background-color:#0f0e0c; padding:6rem 3rem;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;" class="who-grid">
 
@@ -539,6 +542,7 @@ $cases = [
                 <img
                     src="{{ asset('images/work_with.jpeg') }}"
                     alt="Who we work with"
+                    class="work-image"
                     style="width:100%; height:500px; object-fit:cover; object-position:center; display:block;"
                 />
             </div>
@@ -608,7 +612,7 @@ $cases = [
      NEWSLETTER
 ════════════════════════════════════════════════════ --}}
 <section style="background-color:#0f0e0c; padding:3.5rem 3rem; border-top:1px solid #2a2724; border-bottom:1px solid #2a2724;">
-    <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
+    <div class="newsletter-flex" style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
         <div>
             <p style="font-family:'Jost',sans-serif; font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:#39808d; margin-bottom:0.4rem;">
                 Stay Informed
@@ -617,7 +621,7 @@ $cases = [
                 Insights on scaling organizations.
             </p>
         </div>
-        <div style="display:flex; flex:1; max-width:480px;">
+        <div class="newsletter-input-wrap" style="display:flex; flex:1; max-width:480px;">
             <input
                 type="email"
                 placeholder="Your email address"
@@ -632,6 +636,7 @@ $cases = [
                     color:#e8e1d4;
                     padding:0.85rem 1.25rem;
                     outline:none;
+                    min-width:0;
                 "
             />
             <button style="
@@ -654,18 +659,5 @@ $cases = [
         </div>
     </div>
 </section>
-
-{{-- ═══════════════════════════════════════════════════
-     RESPONSIVE
-════════════════════════════════════════════════════ --}}
-<style>
-@media (max-width: 768px) {
-    .what-breaks-grid     { grid-template-columns: 1fr !important; }
-    .services-header-grid { grid-template-columns: 1fr !important; }
-    .cases-header-grid    { grid-template-columns: 1fr !important; }
-    .who-grid             { grid-template-columns: 1fr !important; }
-    .footer-cta-grid      { grid-template-columns: 1fr !important; }
-}
-</style>
 
 </x-layouts.app>

@@ -6,10 +6,10 @@
 
         {{-- Logo --}}
         <a href="{{ route('home') }}"
-        style="display:flex; flex-direction:column; align-items:center;
-            text-decoration:none; line-height:1; z-index:100;">
-        <img src="{{ asset('images/pa-logo.png') }}"alt="People Access"
-            style="left:2rem; top:-70%; position:absolute; height:200px; width:auto; display:block; mix-blend-mode:screen;"/>
+        style="display:block; text-decoration:none; z-index:100; position:relative; height:50px; width:160px;">
+        <img src="{{ asset('images/pa-logo.png') }}" alt="People Access"
+            class="navbar-logo-img"
+            style="position:absolute; left:0; top:-75px; height:200px; width:auto; display:block; mix-blend-mode:screen; pointer-events:none;"/>
         </a>
 
         {{-- Desktop nav links — truly centered --}}

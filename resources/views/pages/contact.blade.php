@@ -5,7 +5,7 @@
 {{-- ═══════════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════════════ --}}
-<section style="
+<section class="contact-hero-grid" style="
     position:relative;
     min-height:100vh;
     background-color:#0f0e0c;
@@ -15,10 +15,10 @@
     align-items:center;
     padding:8rem 3rem 5rem;
     overflow:hidden;
-" class="contact-hero-grid">
+">
 
     {{-- SH decorative letters top right --}}
-    <div style="
+    <div class="deco-letters" style="
         position:absolute;
         top:0.2em;
         right:-0.05em;
@@ -61,11 +61,6 @@
     </div>
 
     {{-- Right — body + buttons --}}
-
-
-
-
-
     <div style="position:relative; z-index:2;">
         <p style="font-family:'Jost',sans-serif; font-size:0.9rem; font-weight:300; color:#7a7268; line-height:1.85; margin-bottom:1rem;">
             Most conversations start the same way: "Some things are breaking, but I am not sure exactly what."
@@ -74,7 +69,7 @@
             That's the signal. Let's diagnose it.
         </p>
         <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
-            <a href="{{ route('contact') }}" style="
+            <a href="#contact-form" style="
                 display:inline-block;
                 font-family:'Jost',sans-serif;
                 font-size:0.75rem;
@@ -123,7 +118,7 @@
 {{-- ═══════════════════════════════════════════════════
      FORM SECTION
 ════════════════════════════════════════════════════ --}}
-<section id="contact-form" style="background-color:#f4efe6; padding:2rem 3rem 7rem;">
+<section id="contact-form" style="background-color:#f4efe6; padding:2rem 3rem 6rem;">
     <div style="max-width:1000px; margin:0 auto;">
 
         {{-- Centered heading --}}
@@ -207,6 +202,7 @@
         <div style="text-align:center; padding:3rem 1rem;">
             <div style="
                 width:48px; height:48px; background:#39808d;
+                border-radius:50%;
                 display:flex; align-items:center; justify-content:center;
                 margin:0 auto 1.5rem;
             ">
@@ -319,10 +315,6 @@
         </div>
     </template>
 
-    <style>
-    @media (max-width: 640px) { .form-row { grid-template-columns: 1fr !important; } }
-    </style>
-
 </div>
 
             {{-- Right — contact sidebar --}}
@@ -357,6 +349,7 @@
                         color:#39808d;
                         text-decoration:none;
                         line-height:1.5;
+                        word-break:break-all;
                     ">advisory@peopleaccessng.com</a>
                 </div>
 
@@ -374,16 +367,5 @@
         </div>
     </div>
 </section>
-
-{{-- ═══════════════════════════════════════════════════
-     RESPONSIVE
-════════════════════════════════════════════════════ --}}
-<style>
-@media (max-width: 768px) {
-    .contact-hero-grid { grid-template-columns: 1fr !important; padding-top: 6rem !important; }
-    .form-card-grid    { grid-template-columns: 1fr !important; }
-    .form-card-grid > div:last-child { border-left: none !important; border-top: 1px solid #ddd5c8; }
-}
-</style>
 
 </x-layouts.app>
