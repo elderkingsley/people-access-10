@@ -490,7 +490,7 @@ $cases = [
             alt="{{ $case['tab'] }}"
             style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;"
         />
-        <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(15,14,12,0.82) 0%, rgba(15,14,12,0.4) 55%, rgba(15,14,12,0.1) 100%);"></div>
+        <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(15,14,12,0.82) 50%, rgba(15,14,12,0.4) 100%, rgba(15,14,12,0.1) 100%);"></div>
 
         <div class="case-overlay-text" style="position:absolute; top:50%; left:0; transform:translateY(-50%); padding:0 3rem; max-width:620px;">
             <p style="font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b2dee6; margin-bottom:1.25rem;">
