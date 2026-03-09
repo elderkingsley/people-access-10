@@ -147,9 +147,9 @@
             padding-bottom: 3rem !important;
         }
 
-        /* Hero content — less top padding on mobile */
+        /* Hero content — no top padding on mobile */
         .hero-content {
-            padding-top: 2rem !important;
+            padding-top: 0 !important;
         }
     }
 

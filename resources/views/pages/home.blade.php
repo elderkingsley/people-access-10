@@ -171,8 +171,8 @@
                     pointer-events: none;
                 "></div>
                 <img
-                    src="{{ asset('images/people_colaborating1.jpeg') }}"
-                    alt="People collaborating"
+                    src="{{ asset('images/project_board.jpeg') }}"
+                    alt="Project board"
                     class="work-image"
                     style="
                         display: block;
