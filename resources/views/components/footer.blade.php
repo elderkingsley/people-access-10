@@ -63,7 +63,7 @@
                         style="height:100px; width:auto; display:block; mix-blend-mode:screen; margin-bottom:1.25rem;"
                     />
                     <div style="display:flex; gap:1.25rem; align-items:center;">
-                        @foreach(['F','IG','X','IN','YT'] as $social)
+                        @foreach(['IG','LI','M'] as $social)
                         <a href="#" style="
                             font-family:'Jost',sans-serif;
                             font-size:0.7rem;
