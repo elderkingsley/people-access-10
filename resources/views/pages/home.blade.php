@@ -8,13 +8,17 @@
 <section class="hero-section" style="
     position: relative;
     min-height: 100vh;
+    min-height: 100dvh;
     background-color: #0f0e0c;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 3rem 4rem;
-    overflow: hidden;
-">
+    overflow: hidden;">
+
+
+
+
     {{-- Large decorative PA — top right, outline only --}}
     <div class="deco-letters" style="
         position: absolute;
@@ -439,7 +443,7 @@ $cases = [
         <div style="position:absolute; inset:0; background:linear-gradient(to right, rgba(15,14,12,0.82) 0%, rgba(15,14,12,0.4) 55%, rgba(15,14,12,0.1) 100%);"></div>
 
         <div class="case-overlay-text" style="position:absolute; top:50%; left:0; transform:translateY(-50%); padding:0 3rem; max-width:620px;">
-            <p style="font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#39808d; margin-bottom:1.25rem;">
+            <p style="font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#b2dee6; margin-bottom:1.25rem;">
                 {{ $case['label'] }}
             </p>
             <p style="
