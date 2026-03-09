@@ -164,7 +164,7 @@
             {{-- Right 2x2 grid --}}
             @php
             $expertise = [
-                ['image' => 'people_colaborating1.jpeg', 'label' => 'Organizational Design',    'title' => 'Crafting Scalable Structures'],
+                ['image' => 'crafting.jpeg', 'label' => 'Organizational Design',    'title' => 'Crafting Scalable Structures'],
                 ['image' => 'tab_in_hand.jpeg',          'label' => 'Performance Management',   'title' => 'Optimizing Team Efficiency'],
                 ['image' => 'one_on_one.jpeg',           'label' => 'Leadership Architecture',  'title' => 'Hiring and Empowering Leaders'],
                 ['image' => 'keyboard.jpeg',             'label' => 'Tech Empowered Processes', 'title' => 'Innovative Solutions'],
@@ -456,64 +456,6 @@
                 <p style="font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:#7a7268; line-height:1.85;">
                     At People Access, we bring systems-level thinking, structured design, and calm strategic clarity to your people challenges.
                 </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- ═══════════════════════════════════════════════════
-     DARK CTA SECTION
-════════════════════════════════════════════════════ --}}
-<section style="background-color:#ece8df; padding:5rem 3rem; border-top:1px solid #2a2724;">
-    <div style="max-width:1200px; margin:0 auto;">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;" class="footer-cta-grid">
-
-            <h2 style="
-                font-family:'Cormorant Garamond',serif;
-                font-size:clamp(2rem,4vw,3.2rem);
-                font-weight:300;
-                font-style:italic;
-                color:#0c0c0b;
-                line-height:1.1;
-            ">Start your diagnostic conversation</h2>
-
-            <div>
-                <p style="font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:#7a7268; line-height:1.8; margin-bottom:2rem;">
-                    Connect with us to assess your people systems, address scaling risks, and strengthen your leadership structure.
-                </p>
-                <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
-                    <a href="{{ route('contact') }}" style="
-                        display:inline-block;
-                        font-family:'Jost',sans-serif;
-                        font-size:0.75rem;
-                        font-weight:500;
-                        letter-spacing:0.12em;
-                        text-transform:uppercase;
-                        color:#0f0e0c;
-                        background:#39808d;
-                        padding:0.85rem 1.75rem;
-                        transition:background 0.2s;
-                    "
-                    onmouseover="this.style.background='#2d6b77'"
-                    onmouseout="this.style.background='#39808d'"
-                    >Begin</a>
-
-                    <a href="{{ route('work') }}" style="
-                        display:inline-block;
-                        font-family:'Jost',sans-serif;
-                        font-size:0.75rem;
-                        font-weight:500;
-                        letter-spacing:0.12em;
-                        text-transform:uppercase;
-                        color:#050505;
-                        border:1px solid rgba(221, 166, 63, 0.644);
-                        padding:0.85rem 1.75rem;
-                        transition:border-color 0.2s;
-                    "
-                    onmouseover="this.style.borderColor='rgba(232,225,212,0.6)'"
-                    onmouseout="this.style.borderColor='rgba(232,225,212,0.25)'"
-                    >The Work</a>
-                </div>
             </div>
         </div>
     </div>
