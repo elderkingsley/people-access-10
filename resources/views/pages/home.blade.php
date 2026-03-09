@@ -9,17 +9,36 @@
     position: relative;
     min-height: 100vh;
     min-height: 100dvh;
-    background-color: #0f0e0c;
+
+    background-image: url('/images/project_board.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 3rem 4rem;
-    overflow: hidden;">
+    overflow: hidden;
+">
+
+    <!-- Gradient overlay -->
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(15,14,12,0.95) 0%,
+            rgba(15,14,12,0.85) 30%,
+            rgba(15,14,12,0.6) 55%,
+            rgba(15,14,12,0.2) 75%,
+            rgba(15,14,12,0) 100%
+        );
+        z-index: 1;
+    "></div>
 
 
-
-
-    {{-- Large decorative PA — top right, outline only --}}
+    <!-- Decorative PA -->
     <div class="deco-letters" style="
         position: absolute;
         top: 0.2em;
@@ -33,11 +52,19 @@
         pointer-events: none;
         user-select: none;
         letter-spacing: -0.02em;
+        z-index: 1;
     ">PA</div>
 
-    <div class="hero-content" style="max-width: 1200px; width: 100%; position: relative; z-index: 2;">
 
-        {{-- Eyebrow --}}
+    <!-- Content -->
+    <div class="hero-content" style="
+        max-width: 1200px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    ">
+
+        <!-- Eyebrow -->
         <p style="
             font-family: 'Jost', sans-serif;
             font-size: 0.7rem;
@@ -48,10 +75,15 @@
             margin-bottom: 1.5rem;
         ">People Systems for Growth</p>
 
-        {{-- Copper accent line --}}
-        <div style="width: 48px; height: 1px; background-color: #39808d; margin-bottom: 2.5rem;"></div>
+        <!-- Accent line -->
+        <div style="
+            width: 48px;
+            height: 1px;
+            background-color: #39808d;
+            margin-bottom: 2.5rem;
+        "></div>
 
-        {{-- Headline --}}
+        <!-- Headline -->
         <h1 style="
             font-family: 'Cormorant Garamond', serif;
             font-size: clamp(3.2rem, 7vw, 6.5rem);
@@ -67,8 +99,15 @@
             <span style="color: #39808d;">that holds.</span>
         </h1>
 
-        {{-- Body + CTA row --}}
-        <div style="display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+
+        <!-- Body + CTA -->
+        <div style="
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        ">
 
             <p style="
                 font-family: 'Jost', sans-serif;
@@ -81,8 +120,8 @@
                 Structure should serve strategy. We build the people systems that let growth-stage companies scale without fracturing.
             </p>
 
-            {{-- Two buttons --}}
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+
                 <a href="{{ route('contact') }}" style="
                     display: inline-block;
                     font-family: 'Jost', sans-serif;
@@ -96,8 +135,9 @@
                     transition: background 0.2s;
                 "
                 onmouseover="this.style.background='#2d6b77'"
-                onmouseout="this.style.background='#39808d'"
-                >Start Here</a>
+                onmouseout="this.style.background='#39808d'">
+                    Start Here
+                </a>
 
                 <a href="{{ route('work') }}" style="
                     display: inline-block;
@@ -113,17 +153,27 @@
                     transition: border-color 0.2s;
                 "
                 onmouseover="this.style.borderColor='rgba(232,225,212,0.6)'"
-                onmouseout="this.style.borderColor='rgba(232,225,212,0.25)'"
-                >The Work</a>
+                onmouseout="this.style.borderColor='rgba(232,225,212,0.25)'">
+                    The Work
+                </a>
+
             </div>
         </div>
 
-        {{-- Scroll indicator --}}
+
+        <!-- Scroll indicator -->
         <div style="position: absolute; bottom: -3rem; right: 0;">
-            <p style="font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#2a2724;">
+            <p style="
+                font-family: 'Jost', sans-serif;
+                font-size: 0.65rem;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #2a2724;
+            ">
                 Scroll
             </p>
         </div>
+
     </div>
 </section>
 
@@ -175,7 +225,7 @@
                     pointer-events: none;
                 "></div>
                 <img
-                    src="{{ asset('images/project_board.jpeg') }}"
+                    src="{{ asset('images/many_looking.jpeg') }}"
                     alt="Project board"
                     class="work-image"
                     style="
