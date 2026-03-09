@@ -6,15 +6,36 @@
      HERO
 ════════════════════════════════════════════════════ --}}
 <section class="hero-section" style="
-    position:relative;
-    min-height:100vh;
-    background-color:#0f0e0c;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    padding:0 3rem 4rem;
-    overflow:hidden;
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    background-image: url('/images/work.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 3rem 4rem;
+    overflow: hidden;
 ">
+
+    <!-- Gradient overlay -->
+    <div style="
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            90deg,
+            rgba(15,14,12,0.95) 0%,
+            rgba(15,14,12,0.85) 0%,
+            rgba(15,14,12,0.6) 55%,
+            rgba(15,14,12,0.2) 75%,
+            rgba(15,14,12,0) 100%
+        );
+        z-index: 1;
+    "></div>
     {{-- TW decorative letters top right --}}
     <div class="deco-letters" style="
         position:absolute;
