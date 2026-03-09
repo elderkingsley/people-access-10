@@ -483,7 +483,7 @@ $cases = [
         x-transition:enter-start="opacity-0"
         x-transition:enter-end="opacity-100"
         class="case-image-wrap"
-        style="position:relative; height:720px; overflow:hidden;"
+        style="position:relative; min-height:50vh; max-height:100vh; overflow:hidden;"
     >
         <img
             src="{{ asset('images/' . $case['image']) }}"
