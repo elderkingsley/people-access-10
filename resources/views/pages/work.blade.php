@@ -88,7 +88,7 @@
                 font-family: 'Jost', sans-serif;
                 font-size: 0.9rem;
                 font-weight: 300;
-                color: #7a7268;
+                color: #f0e0e0;
                 max-width: 380px;
                 line-height: 1.8;
             ">
