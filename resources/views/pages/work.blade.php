@@ -423,7 +423,7 @@
                     src="{{ asset('images/ijeoma.jpeg') }}"
                     alt="Ijeoma Oyeyinka"
                     class="work-image"
-                    style="display:block; width:100%; height:560px; object-fit:cover; object-position:top; position:relative; z-index:1;"
+                    style="display:block; width:100%; min-height:60vh; object-fit:cover; object-position:top; position:relative; z-index:1;"
                 />
             </div>
 
