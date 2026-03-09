@@ -607,7 +607,7 @@ $cases = [
 {{-- ═══════════════════════════════════════════════════
      FOOTER CTA
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#0f0e0c; padding:5rem 3rem; border-top:1px solid #2a2724;">
+<section style="background-color:#ece8df; padding:5rem 3rem; border-top:1px solid #2a2724;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;" class="footer-cta-grid">
 
@@ -616,7 +616,7 @@ $cases = [
                 font-size:clamp(2rem,4vw,3.2rem);
                 font-weight:300;
                 font-style:italic;
-                color:#e8e1d4;
+                color:#0c0c0b;
                 line-height:1.1;
             ">Start your diagnostic conversation</h2>
 
@@ -648,8 +648,8 @@ $cases = [
                         font-weight:500;
                         letter-spacing:0.12em;
                         text-transform:uppercase;
-                        color:#e8e1d4;
-                        border:1px solid rgba(232,225,212,0.25);
+                        color:#050505;
+                        border:1px solid rgba(221, 166, 63, 0.644);
                         padding:0.85rem 1.75rem;
                         transition:border-color 0.2s;
                     "
@@ -658,58 +658,6 @@ $cases = [
                     >The Work</a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-{{-- ═══════════════════════════════════════════════════
-     NEWSLETTER
-════════════════════════════════════════════════════ --}}
-<section style="background-color:#0f0e0c; padding:3.5rem 3rem; border-top:1px solid #2a2724; border-bottom:1px solid #2a2724;">
-    <div class="newsletter-flex" style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem;">
-        <div>
-            <p style="font-family:'Jost',sans-serif; font-size:0.7rem; letter-spacing:0.22em; text-transform:uppercase; color:#39808d; margin-bottom:0.4rem;">
-                Stay Informed
-            </p>
-            <p style="font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:#7a7268;">
-                Insights on scaling organizations.
-            </p>
-        </div>
-        <div class="newsletter-input-wrap" style="display:flex; flex:1; max-width:480px;">
-            <input
-                type="email"
-                placeholder="Your email address"
-                style="
-                    flex:1;
-                    font-family:'Jost',sans-serif;
-                    font-size:0.85rem;
-                    font-weight:300;
-                    background:#1a1916;
-                    border:1px solid #2a2724;
-                    border-right:none;
-                    color:#e8e1d4;
-                    padding:0.85rem 1.25rem;
-                    outline:none;
-                    min-width:0;
-                "
-            />
-            <button style="
-                font-family:'Jost',sans-serif;
-                font-size:0.7rem;
-                font-weight:500;
-                letter-spacing:0.12em;
-                text-transform:uppercase;
-                background:#39808d;
-                color:#0f0e0c;
-                border:none;
-                padding:0.85rem 1.5rem;
-                cursor:pointer;
-                white-space:nowrap;
-                transition:background 0.2s;
-            "
-            onmouseover="this.style.background='#2d6b77'"
-            onmouseout="this.style.background='#39808d'"
-            >Subscribe</button>
         </div>
     </div>
 </section>

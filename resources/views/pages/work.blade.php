@@ -423,7 +423,7 @@
                     src="{{ asset('images/ijeoma.jpeg') }}"
                     alt="Ijeoma Oyeyinka"
                     class="work-image"
-                    style="display:block; width:100%; height:960px; object-fit:cover; object-position:top; position:relative; z-index:1;"
+                    style="display:block; width:100%; height:560px; object-fit:cover; object-position:top; position:relative; z-index:1;"
                 />
             </div>
 
@@ -462,73 +462,9 @@
 </section>
 
 {{-- ═══════════════════════════════════════════════════
-     WORK CTA — light email form
-════════════════════════════════════════════════════ --}}
-<section style="background-color:#f4efe6; padding:6rem 3rem;">
-    <div style="max-width:1200px; margin:0 auto;">
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;" class="work-cta-grid">
-
-            <h2 style="
-                font-family:'Cormorant Garamond',serif;
-                font-size:clamp(2rem,4vw,3.2rem);
-                font-weight:300;
-                font-style:italic;
-                color:#1a1815;
-                line-height:1.1;
-            ">Start your diagnostic conversation</h2>
-
-            <div>
-                <p style="font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:#7a7268; line-height:1.8; margin-bottom:1.5rem;">
-                    Speak with an advisor about scaling challenges and next steps.
-                </p>
-                <div style="display:flex;">
-                    <input
-                        type="email"
-                        placeholder="Your email"
-                        style="
-                            flex:1;
-                            font-family:'Jost',sans-serif;
-                            font-size:0.85rem;
-                            font-weight:300;
-                            background:#fff;
-                            border:1px solid #ddd5c8;
-                            border-right:none;
-                            color:#1a1815;
-                            padding:0.85rem 1.25rem;
-                            outline:none;
-                            min-width:0;
-                        "
-                    />
-                    <button style="
-                        font-family:'Jost',sans-serif;
-                        font-size:0.7rem;
-                        font-weight:500;
-                        letter-spacing:0.12em;
-                        text-transform:uppercase;
-                        background:#1a1815;
-                        color:#f4efe6;
-                        border:none;
-                        padding:0.85rem 1.5rem;
-                        cursor:pointer;
-                        white-space:nowrap;
-                        transition:background 0.2s;
-                    "
-                    onmouseover="this.style.background='#39808d'"
-                    onmouseout="this.style.background='#1a1815'"
-                    >Submit</button>
-                </div>
-                <p style="font-family:'Jost',sans-serif; font-size:0.78rem; font-weight:300; color:#a09488; margin-top:0.75rem;">
-                    We advise growth-stage leaders navigating scale.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- ═══════════════════════════════════════════════════
      DARK CTA SECTION
 ════════════════════════════════════════════════════ --}}
-<section style="background-color:#0f0e0c; padding:5rem 3rem; border-top:1px solid #2a2724;">
+<section style="background-color:#ece8df; padding:5rem 3rem; border-top:1px solid #2a2724;">
     <div style="max-width:1200px; margin:0 auto;">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;" class="footer-cta-grid">
 
@@ -537,7 +473,7 @@
                 font-size:clamp(2rem,4vw,3.2rem);
                 font-weight:300;
                 font-style:italic;
-                color:#e8e1d4;
+                color:#0c0c0b;
                 line-height:1.1;
             ">Start your diagnostic conversation</h2>
 
@@ -556,12 +492,12 @@
                         color:#0f0e0c;
                         background:#39808d;
                         padding:0.85rem 1.75rem;
-                        text-decoration:none;
                         transition:background 0.2s;
                     "
                     onmouseover="this.style.background='#2d6b77'"
                     onmouseout="this.style.background='#39808d'"
                     >Begin</a>
+
                     <a href="{{ route('work') }}" style="
                         display:inline-block;
                         font-family:'Jost',sans-serif;
@@ -569,10 +505,9 @@
                         font-weight:500;
                         letter-spacing:0.12em;
                         text-transform:uppercase;
-                        color:#e8e1d4;
-                        border:1px solid rgba(232,225,212,0.25);
+                        color:#050505;
+                        border:1px solid rgba(221, 166, 63, 0.644);
                         padding:0.85rem 1.75rem;
-                        text-decoration:none;
                         transition:border-color 0.2s;
                     "
                     onmouseover="this.style.borderColor='rgba(232,225,212,0.6)'"
