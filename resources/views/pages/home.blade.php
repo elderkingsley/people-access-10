@@ -336,7 +336,7 @@
                     class="service-expanded-text"
                     style="padding:0 0 1.5rem 5.5rem;"
                 >
-                    <p style="font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:#7a7268; line-height:1.85; max-width:560px;">
+                    <p style="font-family:'Jost',sans-serif; font-size:0.88rem; font-weight:300; color:#ffffff; line-height:1.85; max-width:560px;">
                         {{ $s[2] }}
                     </p>
                 </div>
@@ -529,9 +529,9 @@ $cases = [
             "
             :style="active === {{ $i }} ? 'border-bottom-color:#39808d;' : 'border-bottom-color:transparent;'"
         >
-            <p style="font-family:'Jost',sans-serif; font-size:0.82rem; font-weight:500; margin-bottom:0.2rem;"
-               :style="active === {{ $i }} ? 'color:#1a1815' : 'color:#7a7268'"
-            >{{ $case['tab'] }}</p>
+            <p style="font-family:'Jost',sans-serif; font-size:0.99rem; font-weight:500; margin-bottom:0.4rem;"
+               :style="active === {{ $i }} ? 'color:#1a1815' : 'color:#7a7268'">
+                {{ $case['tab'] }}</p>
             <p style="font-family:'Jost',sans-serif; font-size:0.72rem; font-weight:300; color:#a09488;">
                 {{ $case['sub'] }}
             </p>

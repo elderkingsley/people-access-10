@@ -80,27 +80,7 @@
                     </div>
                 </div>
 
-                {{-- Expertise links --}}
-                <div>
-                    <p style="font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.22em; text-transform:uppercase; color:#7a7268; margin-bottom:1.5rem;">
-                        Expertise
-                    </p>
-                    @foreach(['About','Team','Cases','Contact'] as $link)
-                    <a href="#" style="
-                        display:block;
-                        font-family:'Jost',sans-serif;
-                        font-size:0.85rem;
-                        font-weight:300;
-                        color:#a09488;
-                        text-decoration:none;
-                        margin-bottom:0.85rem;
-                        transition:color 0.2s;
-                    "
-                    onmouseover="this.style.color='#e8e1d4'"
-                    onmouseout="this.style.color='#a09488'"
-                    >{{ $link }}</a>
-                    @endforeach
-                </div>
+
 
                 {{-- Contact --}}
                 <div>
