@@ -118,8 +118,9 @@
 {{-- ═══════════════════════════════════════════════════
      FORM SECTION
 ════════════════════════════════════════════════════ --}}
+
 <section id="contact-form" style="background-color:#f4efe6; padding:2rem 3rem 6rem;">
-    <div style="max-width:1000px; margin:0 auto;">
+    <div style="max-width:1400px; margin:0 auto;">
 
         {{-- Centered heading --}}
         <div style="text-align:center; margin-bottom:3rem;">
@@ -145,8 +146,7 @@
 
             <iframe
                 src="https://www.careers-page.com/people-access-ng"
-                style="width:100%; min-height:900px; border:none;"
-                loading="lazy">
+                style="width:100%; min-height:800px; border:none;">
             </iframe>
 
         </div>
@@ -201,4 +201,5 @@
         </div>
     </div>
 </section>
+
 </x-layouts.app>
