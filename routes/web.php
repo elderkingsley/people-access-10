@@ -6,3 +6,4 @@ use App\Http\Controllers\MarketingController;
 Route::get('/', [MarketingController::class, 'home'])->name('home');
 Route::get('/work', [MarketingController::class, 'work'])->name('work');
 Route::get('/contact', [MarketingController::class, 'contact'])->name('contact');
+Route::get('/carrers', [MarketingController::class, 'careers'])->name('careers');

@@ -529,7 +529,7 @@ $cases = [
             "
             :style="active === {{ $i }} ? 'border-bottom-color:#39808d;' : 'border-bottom-color:transparent;'"
         >
-            <p style="font-family:'Jost',sans-serif; font-size:0.99rem; font-weight:500; margin-bottom:0.4rem;"
+            <p style="font-family:'Jost',sans-serif; font-size:0.65rem; letter-spacing:0.2em; font-weight:500; margin-bottom:0.4rem;"
                :style="active === {{ $i }} ? 'color:#1a1815' : 'color:#7a7268'">
                 {{ $case['tab'] }}</p>
             <p style="font-family:'Jost',sans-serif; font-size:0.72rem; font-weight:300; color:#a09488;">

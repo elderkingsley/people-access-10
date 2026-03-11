@@ -61,6 +61,8 @@
             <li><a href="{{ route('home') }}" style="font-family:'Jost',sans-serif; font-size:0.75rem; font-weight:400; letter-spacing:0.1em; text-transform:uppercase; color:#f5f0eb; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#e8e1d4'" onmouseout="this.style.color='#a09488'">Home</a></li>
             <li><a href="{{ route('work') }}" style="font-family:'Jost',sans-serif; font-size:0.75rem; font-weight:400; letter-spacing:0.1em; text-transform:uppercase; color:#a09488; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#e8e1d4'" onmouseout="this.style.color='#a09488'">The Work</a></li>
             <li><a href="{{ route('contact') }}" style="font-family:'Jost',sans-serif; font-size:0.75rem; font-weight:400; letter-spacing:0.1em; text-transform:uppercase; color:#a09488; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#e8e1d4'" onmouseout="this.style.color='#a09488'">Start Here</a></li>
+            <li><a href="{{ route('careers') }}" style="font-family:'Jost',sans-serif; font-size:0.75rem; font-weight:400; letter-spacing:0.1em; text-transform:uppercase; color:#a09488; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='#e8e1d4'" onmouseout="this.style.color='#a09488'">Careers</a></li>
+        </ul>
         </ul>
 
         {{-- Desktop BEGIN button --}}
@@ -96,6 +98,7 @@
         <a href="{{ route('home') }}" @click="open = false">Home</a>
         <a href="{{ route('work') }}" @click="open = false">The Work</a>
         <a href="{{ route('contact') }}" @click="open = false">Start Here</a>
+        <a href="{{ route('careers') }}" @click="open = false">Careers</a>
         <a href="{{ route('contact') }}" @click="open = false" style="color:#39808d;">Begin →</a>
     </div>
 </div>
