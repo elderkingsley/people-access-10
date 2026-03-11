@@ -138,19 +138,18 @@
         </div>
 
         {{-- Form card --}}
-        <div style="
+       <div style="
             background:#fff;
             border:1px solid #ddd5c8;
-            display:grid;
-            grid-template-columns:1fr 280px;
-            gap:0;
-        " class="form-card-grid">
+            padding:2rem;">
 
-            {{-- Left — Alpine form --}}
-<div style="padding:2.5rem;"
-<iframe src="https://www.careers-page.com/people-access-ng" style="width:100%; height:100%; border:none;">
-</iframe>
-</div>
+            <iframe
+                src="https://www.careers-page.com/people-access-ng"
+                style="width:100%; min-height:900px; border:none;"
+                loading="lazy">
+            </iframe>
+
+        </div>
 
             {{-- Right — contact sidebar --}}
             <div style="
@@ -202,5 +201,4 @@
         </div>
     </div>
 </section>
-
 </x-layouts.app>
